@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="main.php"/>
+
 </head>
 
 <body>
     <h2>Expense Tracker</h2>
+
     <section class="container1">
         <div>
-            <form>
+            <form action="connect.php" method="post">
                 <h4>Add New Expense</h4>
                 <div class="input">
-                    <input type="text" class="input-fileds" placeholder="Name" />
-                    <input type="text" class="input-fileds" placeholder="Category" />
-                    <input type="number" class="input-fileds" placeholder="Amount" />
-                    <input type="date" class="input-fileds" placeholder="Date" />
+                    <input type="text" class="input-fileds" placeholder="Name" name="name"/>
+                    <input type="text" class="input-fileds" placeholder="Category" name="category"/>
+                    <input type="number" class="input-fileds" placeholder="Amount" name="amount"/>
+                    <input type="date" class="input-fileds" placeholder="Date" name="date"/>
                 </div>
 
                 <p>
@@ -30,48 +33,58 @@
     <section class="container2">
         <p>
         <table>
-            <tr class="th">
-                <th>In</th>
-                <th>Name</th>
-                <th>Category</th>
-                <th>Amount</th>
-                <th>Date</th>
-            </tr>
+            <thead>
+                <tr class="th">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <td>01</td>
-                <td>Name</td>
-                <td>Transportation</td>
-                <td>1000.00</td>
-                <td>09/22/2023</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Name</td>
+                    <td>Transportation</td>
+                    <td>1000.00</td>
+                    <td>09/22/2023</td>
+                    <td><a class="edit" href="">Edit</a> <a class="delete" href="">Delete</a></td>
+                </tr>
 
-            <tr>
-                <td>02</td>
-                <td>Name</td>
-                <td>Transportation</td>
-                <td>1000.00</td>
-                <td>09/22/2023</td>
-            </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Name</td>
+                    <td>Transportation</td>
+                    <td>1000.00</td>
+                    <td>09/22/2023</td>
+                    <td><a class="edit" href="">Edit</a> <a class="delete" href="">Delete</a></td>
+                </tr>
 
-            <tr>
-                <td>03</td>
-                <td>Name</td>
-                <td>Transportation</td>
-                <td>1000.00</td>
-                <td>09/22/2023</td>
-            </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Name</td>
+                    <td>Transportation</td>
+                    <td>1000.00</td>
+                    <td>09/22/2023</td>
+                    <td><a class="edit" href="">Edit</a> <a class="delete" href="">Delete</a></td>
+                </tr>
 
-            <tr>
-                <td>04</td>
-                <td>Name</td>
-                <td>Transportation</td>
-                <td>1000.00</td>
-                <td>09/22/2023</td>
-            </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Name</td>
+                    <td>Transportation</td>
+                    <td>1000.00</td>
+                    <td>09/22/2023</td>
+                    <td><a class="edit" href="">Edit</a> <a class="delete" href="">Delete</a></td>
+                </tr>
+            </tbody>
         </table>
         </p>
     </section>
+    
     </div>
 
 

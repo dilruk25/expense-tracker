@@ -5,6 +5,7 @@ body {
     color: rgb(105, 105, 105);
 }
 
+/* Container 1 for Add Expenses */
 .container1 {
     position: relative;
     top: 20px;
@@ -31,6 +32,7 @@ body {
     border: none;
 }
 
+/* Table */
 .container2 {
     position: relative;
     top: 40px;
@@ -51,4 +53,25 @@ th {
 td {
     padding: 5px 80px 5px 15px;
     text-align: left;
+}
+
+/* Link decoration */
+.edit {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+}
+
+.delete {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: brown;
+}
+
+a {
+    padding-left: 5px;
+    padding-right: 5px;
 }
